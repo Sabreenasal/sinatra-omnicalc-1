@@ -44,5 +44,10 @@ erb(:new_payment)
 end
 
 get("/payment/results") do
+  @the_apr = params.fetch("user_apr").to_f
+
+  @user_years = params.fetch("user_years")
+
+
 erb(:payment_results)
 end
