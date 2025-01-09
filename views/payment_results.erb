@@ -7,7 +7,7 @@
     APR
   </dt>
   <dd>
-    <%=  (@the_apr * 100 / 100) %>
+    <%=  @apr_shown %>
   </dd>
 
   <dt>
@@ -21,14 +21,14 @@
     Principal
   </dt>
   <dd>
-    $2.00
+    <%= @present_val_display %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $0.06
+   <%= @payment %>
   </dd>
 </dl>
 
